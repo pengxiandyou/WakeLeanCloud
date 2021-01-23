@@ -9,4 +9,4 @@ else:
 for i in range(0, len(urls)):
     req = requests.get(urls[i])
     print(f'第{i}号网址唤醒状态:', req, time.strftime(
-        '%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
+        '%Y-%m-%d %H:%M:%S', time.localtime(time.time() + 28800000)))
